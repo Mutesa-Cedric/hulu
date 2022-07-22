@@ -1,5 +1,5 @@
 import React from 'react';
-import requests from '../utils/requests';
+import {requests} from '../utils/requests';
 import { useRouter } from 'next/router'
 function Nav() {
   const router = useRouter();

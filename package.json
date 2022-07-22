@@ -10,6 +10,7 @@
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-flip-move": "^3.0.4",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {

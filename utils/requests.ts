@@ -1,6 +1,54 @@
 const API_KEY = process.env.API_KEY
 
-export default {
+interface Requests {
+    fetchTredingMovies: {
+        title: string;
+        url: string;
+    };
+    fetchTopRatedMovies: {
+        title: string;
+        url: string;
+    };
+    fetchActionMovies: {
+        title: string;
+        url: string;
+    };
+    fetchComedyMovies: {
+        title: string;
+        url: string;
+    };
+    fetchHorrorMovies: {
+        title: string;
+        url: string;
+
+    };
+    fetchRomanceMovies: {
+        title: string;
+        url: string;
+    };
+    fetchSciFiMovies: {
+        title: string;
+        url: string;
+    };
+    fetchMysteryMovies: {
+        title: string;
+        url: string;
+    };
+    fetchWesternMovies: {
+        title: string;
+        url: string;
+    };
+    fetchAnimationMovies: {
+        title: string;
+        url: string;
+    };
+    fetchTvMovies: {
+        title: string;
+        url: string;
+    }
+}
+
+export const requests: Requests = {
     fetchTredingMovies: {
         title: "Trending",
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
