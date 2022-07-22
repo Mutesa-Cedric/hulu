@@ -1,53 +1,8 @@
 const API_KEY = process.env.API_KEY
 
-interface Requests {
-    fetchTredingMovies: {
-        title: string;
-        url: string;
-    };
-    fetchTopRatedMovies: {
-        title: string;
-        url: string;
-    };
-    fetchActionMovies: {
-        title: string;
-        url: string;
-    };
-    fetchComedyMovies: {
-        title: string;
-        url: string;
-    };
-    fetchHorrorMovies: {
-        title: string;
-        url: string;
-
-    };
-    fetchRomanceMovies: {
-        title: string;
-        url: string;
-    };
-    fetchSciFiMovies: {
-        title: string;
-        url: string;
-    };
-    fetchMysteryMovies: {
-        title: string;
-        url: string;
-    };
-    fetchWesternMovies: {
-        title: string;
-        url: string;
-    };
-    fetchAnimationMovies: {
-        title: string;
-        url: string;
-    };
-    fetchTvMovies: {
-        title: string;
-        url: string;
-    }
+type Requests = {
+    [key: string]: any;
 }
-
 export const requests: Requests = {
     fetchTredingMovies: {
         title: "Trending",
@@ -92,5 +47,5 @@ export const requests: Requests = {
     fetchTvMovies: {
         title: "TV Movie",
         url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`
-    }
+    },
 }
