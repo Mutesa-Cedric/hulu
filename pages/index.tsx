@@ -6,8 +6,7 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Results from '../components/Results'
 import { requests } from '../utils/requests'
-const Home: NextPage = ({ results }: { results: any }) => {
-
+function Home({ results }: { results: any }) {
   return (
     <div className="">
       <Head>
