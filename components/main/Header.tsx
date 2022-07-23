@@ -10,7 +10,7 @@ import {
 } from "@heroicons/react/outline"
 function Header() {
     return (
-        <header className="flex flex-col sm:flex-row justify-between m-5 items-center h-auto">
+        <header className="flex flex-col sm:flex-row justify-between mx-5 py-5 items-center h-auto">
             <div className="flex flex-grow justify-evenly max-w-2xl">
                 <HeaderItem title="home" Icon={HomeIcon} />
                 <HeaderItem title="trending" Icon={LightningBoltIcon} />

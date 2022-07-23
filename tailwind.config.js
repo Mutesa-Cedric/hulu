@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       screens:{
         "3xl":"2000px"
-      }
+      },
+      colors:{
+        'green-primary':"#1CE783",
+        "gray-primary":"#323843"
+      },
     },
   },
   plugins: [require('tailwind-scrollbar-hide')],
