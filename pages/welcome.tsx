@@ -13,7 +13,7 @@ function welcome() {
         <title>Stream Tv and Movies Live and online | Hulu</title>
         <link rel="icon" href="/images/logo.jpg" />
       </Head>
-      <main className="bg-[#0b0c0f]">
+      <main className="bg-[#0b0c0f] relative">
         <NavBar />
         <Banner />
         <Ads/>
