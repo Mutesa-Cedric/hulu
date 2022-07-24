@@ -7,3 +7,9 @@
         @apply min-h-screen;
     }
 }
+
+@layer components{
+    .channelButton{
+        @apply text-white/50 font-semibold uppercase text-[13px]  hover:text-white pb-3 border-b-[5px] border-white/0 hover:border-white cursor-pointer;
+    }
+}
