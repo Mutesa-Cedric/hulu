@@ -7,7 +7,7 @@ import Results from '../components/main/Results'
 import { requests } from '../utils/requests'
 function Home({ results }: { results: any }) {
   return (
-    <div className="bg-[#06202A] text-gray-300 w-full h-auto">
+    <div className="bg-[#06202A] text-gray-300 w-full h-auto scrollbar-hide">
       <Head>
         <title>hulu - by Mutesa Cedric</title>
         <link rel="icon" href="/images/logo.jpg" />

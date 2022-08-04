@@ -8,10 +8,10 @@ interface ThumbnailProps {
 const Thumbnail=forwardRef(({ result }: ThumbnailProps,ref)=> {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
   return (
-    <div className="group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
+    <div className="group cursor-pointer border border-gray-700 rounded-xl p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
       <Image layout="responsive" src={`${BASE_URL}${result.backdrop_path || result.poster_path}` ||
         `${BASE_URL}${result.poster_path}`}
-        height={1080} width={1920} />
+        height={1000} width={1820} className="rounded-t-xl"/>
       <div className="p-2">
         <p className="truncate">{result.overview}</p>
         <h2 className="mt-1 text-2xl text-white transition-all duration-100 ease-in-out  group-hover:font-bold">{result.title || result.original_name}</h2>
