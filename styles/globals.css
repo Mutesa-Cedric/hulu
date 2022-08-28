@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    body{
-        @apply min-h-screen overflow-x-hidden;
-    }
+@layer base {
+  body {
+    @apply min-h-screen overflow-x-hidden;
+  }
 }
 
-@layer components{
-    .channelButton{
-        @apply text-white/50 font-semibold uppercase text-[13px]  hover:text-white pb-3 border-b-[5px] border-white/0 hover:border-white cursor-pointer;
-    }
+@layer components {
+  .channelButton {
+    @apply text-white/50 font-semibold uppercase text-[13px]  hover:text-white pb-3 border-b-[5px] border-white/0 hover:border-white cursor-pointer;
+  }
+  .input-container {
+    @apply flex flex-col space-y-2;
+  }
+  .input-container label {
+    @apply text-[14px] uppercase font-semibold text-[#636e85];
+  }
+  .input-container input,select {
+    @apply border-2 border-gray-300 rounded-[4px] py-2 outline-none px-4 focus:border-gray-800;
+  }
 }
